@@ -5,13 +5,13 @@ const ApartmentDetails = async ({ params, searchParams }) => {
   const apartmentDetails = await getApartmentDetails(params.id);
 
   return (
-    <div className="flex items-center p-20 justify-center mt-0">
+    <div className="flex items-center p-20 justify-center mt-0 bg-gray-200 pb-96">
       <div className="mr-16">
         <img
           src={searchParams.image}
           alt=""
           loading="lazy"
-          className="max-w-imageWidth w-full rounded-10!"
+          className="max-w-imageWidth rounded-lg w-full border-2 border-black "
         />
       </div>
       <div>

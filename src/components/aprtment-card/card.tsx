@@ -15,7 +15,7 @@ export default function ApartmentCard({ data }: { data: apartmentModel }) {
 
   return (
     <Link href={{ pathname: data._id, query: { image: image } }}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, minWidth: 200,height:310 }}>
         <CardActionArea>
           <CardMedia
             component="img"
