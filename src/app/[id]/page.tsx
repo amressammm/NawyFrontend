@@ -15,27 +15,27 @@ const ApartmentDetails = async ({ params, searchParams }) => {
         />
       </div>
       <div>
-        <h1 className="text-2xl mb-4">{apartmentDetails.data.address}</h1>
+        <h1 className="text-2xl mb-4">{apartmentDetails?.data?.address}</h1>
         <p className="mb-4 text-gray-700">
-          {apartmentDetails.data.description}
+          {apartmentDetails?.data?.description}
         </p>
         <div className="mb-4">
           <p>
-            <strong>Bedrooms:</strong> {apartmentDetails.data.bedrooms}
+            <strong>Bedrooms:</strong> {apartmentDetails?.data?.bedrooms}
           </p>
           <p>
-            <strong>Bathrooms:</strong> {apartmentDetails.data.bathrooms}
+            <strong>Bathrooms:</strong> {apartmentDetails?.data?.bathrooms}
           </p>
           <p>
-            <strong>Size:</strong> {apartmentDetails.data.size}
+            <strong>Size:</strong> {apartmentDetails?.data?.size}
           </p>
         </div>
         <div className="mb-4">
           <p>
-            <strong>Owner:</strong> {apartmentDetails.data.ownerName}
+            <strong>Owner:</strong> {apartmentDetails?.data?.ownerName}
           </p>
           <p>
-            <strong>Price:</strong> {apartmentDetails.data.price} EGP
+            <strong>Price:</strong> {apartmentDetails?.data?.price} EGP
           </p>
         </div>
       </div>
